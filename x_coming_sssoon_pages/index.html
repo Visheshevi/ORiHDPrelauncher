@@ -152,6 +152,15 @@
 </script>
 
    <script>
+   document.getElementById('button').onclick=function(Email){
+  firebase.database().ref('Emails/').set({
+    email: Email,
+
+  });
+}
+</script>
+
+  <script>
    var count = 1;
 document.getElementById('button').onclick = function() {
    alert("button was clicked " + (count++) + " times");
